@@ -14,8 +14,9 @@ Uptime Kuma ueberwacht Erreichbarkeit von Diensten
 
 ## Volumes
 
-````text
-./data:/app/data ```
+```
+./data:/app/data
+```
 
 ---
 
@@ -27,4 +28,7 @@ louslam/uptime-kuma:2
 
 ## Backup
 
-Bei einem Backup muss folgender Ordner gesichert werden ```text data/ ```
+Bei einem Backup muss folgender Ordner gesichert werden: 
+```
+data/
+```

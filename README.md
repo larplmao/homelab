@@ -36,7 +36,7 @@ Ich nutze es, um Linux, Docker, Netzwerke etc.. kennenzulernen und um mir zuhaus
 
 ## Projektstruktur
 
-````text
+```
 homelab/
 |-- docs/
 |-- portainer/

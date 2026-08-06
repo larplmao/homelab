@@ -12,3 +12,7 @@
 
 # Temporary files
 *.tmp
+
+# Uptime Kuma runtime data
+uptime-kuma/data/*
+!uptime-kuma/data/.gitkeep

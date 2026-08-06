@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Environment files
+.env
+
+# Logs
+*.log
+
+# Backup files
+*.bak
+
+# Temporary files
+*.tmp

@@ -13,6 +13,11 @@
 # Temporary files
 *.tmp
 
-# Uptime Kuma runtime data
+# Uptime Kuma
 uptime-kuma/data/*
 !uptime-kuma/data/.gitkeep
+
+# Pi-hole
+pi-hole/data/*
+!pi-hole/data/.gitkeep
+ 

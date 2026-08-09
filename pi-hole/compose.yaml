@@ -3,14 +3,6 @@ services:
     container_name: pihole
     hostname: pihole
     image: pihole/pihole:2026.07.2
-    ports:
-      # DNS
-      - "53:53/tcp"
-      - "53:53/udp"
-      # HTTP
-      - "80:80/tcp"
-      # DHCP
-      # - "67:67/udp"
     environment:
       TZ: ${TZ}
       FTLCONF_webserver_api_password: ${PIHOLE_PASSWORD}
@@ -20,8 +12,4 @@ services:
     cap_add:
       - NET_ADMIN
     restart: unless-stopped
-    networks:
-      - dns
-networks:
-  dns:
-    driver: bridge
+    network_mode: host

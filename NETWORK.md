@@ -16,7 +16,10 @@ Sunrise Connect Box 3
 
 ## DNS
 
-Sunrise Router
+Pi-Hole
 
 ---
 
+## DHCP 
+
+Pi-Hole 

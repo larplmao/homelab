@@ -31,7 +31,7 @@ Ich nutze es, um Linux, Docker, Netzwerke etc.. kennenzulernen und um mir zuhaus
 
 - Portainer
 - Uptime Kuma
-
+- Pi-hole
 ---
 
 ## Projektstruktur
@@ -41,7 +41,7 @@ homelab/
 |-- docs/
 |-- portainer/
 |-- uptime-kuma/
-|-- pihole/
+|-- pi-hole/
 |-- README.md
 |-- NETWORK.md
 |-- SERVICES.md

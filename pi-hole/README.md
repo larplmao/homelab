@@ -15,7 +15,7 @@ Ich nutze Pi-hole als Networkwide DNS-Server mit integriertem AD-Tracker Blocker
 | 53   | TCP       | DNS             |
 | 53   | UDP       | DNS             |
 | 80   | TCP       | Weboberflaeche  |
-| 67   | UDP       | DHCP (optional) |
+| 67   | UDP       | DHCP	     |
 
 ---
 

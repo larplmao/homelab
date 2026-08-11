@@ -1,0 +1,35 @@
+services:
+  wg-easy:
+    container_name: wireguard
+    image: ghcr.io/wg-easy/wg-easy:15
+    entrypoint:
+      - /bin/sh
+      - -c
+    command:
+      - |
+        update-alternatives --install /usr/sbin/iptables iptables /usr/sbin/iptables-nft 20 \
+          --slave /usr/sbin/iptables-restore iptables-restore /usr/sbin/iptables-nft-restore \
+          --slave /usr/sbin/iptables-save iptables-save /usr/sbin/iptables-nft-save
+        exec /usr/bin/dumb-init node server/index.mjs
+    environment:
+      - INSECURE=true
+      - DISABLE_IPV6=true
+    volumes:
+      - ./data:/etc/wireguard
+      - /lib/modules:/lib/modules:ro
+    ports:
+      - "51820:51820/udp"
+      - "51821:51821/tcp"
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    sysctls:
+      - net.ipv4.ip_forward=1
+      - net.ipv4.conf.all.src_valid_mark=1
+    networks:
+      - wireguard
+
+networks:
+  wireguard:
+    driver: bridge

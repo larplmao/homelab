@@ -21,3 +21,6 @@ uptime-kuma/data/*
 pi-hole/data/*
 !pi-hole/data/.gitkeep
  
+# Wireguard
+wireguard/data*
+!wireguard/data/.gitkeep

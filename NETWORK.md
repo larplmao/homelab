@@ -11,6 +11,7 @@ Connection: Ethernet 1 Gb/s
 ## Router
 
 Sunrise Connect Box 3
+**IPv6 Deaktiviert**
 
 ---
 

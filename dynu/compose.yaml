@@ -1,0 +1,7 @@
+services:
+  dynu-updater:
+    container_name: dynu-updater
+    image: longkeyy/dynu-updater:1.1
+    env_file:
+      - .env
+    restart: unless-stopped

@@ -32,6 +32,9 @@ Ich nutze es, um Linux, Docker, Netzwerke etc.. kennenzulernen und um mir zuhaus
 - Portainer
 - Uptime Kuma
 - Pi-hole
+- Wireguard
+- Dynu Updater
+
 ---
 
 ## Projektstruktur
@@ -39,9 +42,11 @@ Ich nutze es, um Linux, Docker, Netzwerke etc.. kennenzulernen und um mir zuhaus
 ```
 homelab/
 |-- docs/
+|-- dynu/
 |-- portainer/
 |-- uptime-kuma/
 |-- pi-hole/
+|-- wireguard/
 |-- README.md
 |-- NETWORK.md
 |-- SERVICES.md

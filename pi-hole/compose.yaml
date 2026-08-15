@@ -7,6 +7,7 @@ services:
       TZ: ${TZ}
       FTLCONF_webserver_api_password: ${PIHOLE_PASSWORD}
       FTLCONF_dns_listeningMode: "ALL"
+      FTLCONF_webserver_port: "8080"
     volumes:
       - ./data:/etc/pihole
     cap_add:

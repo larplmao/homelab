@@ -1,7 +1,7 @@
 services:
   wg-easy:
     container_name: wireguard
-    image: ghcr.io/wg-easy/wg-easy:15
+    image: ghcr.io/wg-easy/wg-easy:15.3.0
     entrypoint:
       - /bin/sh
       - -c
@@ -29,7 +29,11 @@ services:
       - net.ipv4.conf.all.src_valid_mark=1
     networks:
       - wireguard
+      - proxy-network
 
 networks:
   wireguard:
     driver: bridge
+
+  proxy-network:
+    external: true

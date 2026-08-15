@@ -24,3 +24,9 @@ pi-hole/data/*
 # Wireguard
 wireguard/data*
 !wireguard/data/.gitkeep
+
+# Caddy
+caddy/data/*
+caddy/config/*
+!caddy/data/.gitkeep
+!caddy/config/.gitkeep

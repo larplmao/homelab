@@ -12,5 +12,13 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
 
+    networks:
+      - default
+      - proxy-network
+
 volumes:
   portainer_data:
+
+networks:
+  proxy-network:
+    external: true

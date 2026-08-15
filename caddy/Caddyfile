@@ -1,0 +1,27 @@
+portainer.homelab {
+    tls internal
+
+    reverse_proxy portainer:9443 {
+        transport http {
+            tls_insecure_skip_verify
+        }
+    }
+}
+
+uptime.homelab {
+    tls internal
+
+    reverse_proxy uptime-kuma:3001
+}
+
+pihole.homelab {
+    tls internal
+  
+    reverse_proxy 192.168.1.20:8080
+}
+
+wireguard.homelab {
+    tls internal
+
+    reverse_proxy wireguard:51821
+}

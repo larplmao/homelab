@@ -34,6 +34,7 @@ Ich nutze es, um Linux, Docker, Netzwerke etc.. kennenzulernen und um mir zuhaus
 - Pi-hole
 - Wireguard
 - Dynu Updater
+- Caddy
 
 ---
 
@@ -41,6 +42,7 @@ Ich nutze es, um Linux, Docker, Netzwerke etc.. kennenzulernen und um mir zuhaus
 
 ```
 homelab/
+|-- caddy/
 |-- docs/
 |-- dynu/
 |-- portainer/

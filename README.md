@@ -35,6 +35,7 @@ Ich nutze es, um Linux, Docker, Netzwerke etc.. kennenzulernen und um mir zuhaus
 - Wireguard
 - Dynu Updater
 - Caddy
+- Homarr
 
 ---
 
@@ -45,6 +46,7 @@ homelab/
 |-- caddy/
 |-- docs/
 |-- dynu/
+|-- homarr/
 |-- portainer/
 |-- uptime-kuma/
 |-- pi-hole/

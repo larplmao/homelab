@@ -8,3 +8,4 @@
 | Wireguard | 5820, 5821 | Installiert |
 | Dynu Updater | // | Installiert| 
 | Caddy | 80, 443 | Installiert |
+| Homarr| 7575 | Installiert |

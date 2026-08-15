@@ -30,3 +30,7 @@ caddy/data/*
 caddy/config/*
 !caddy/data/.gitkeep
 !caddy/config/.gitkeep
+
+# Homarr
+homarr/appdata/*
+!homarr/appdata/.gitkeep

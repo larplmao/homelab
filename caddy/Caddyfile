@@ -25,3 +25,9 @@ wireguard.homelab {
 
     reverse_proxy wireguard:51821
 }
+
+home.homelab {
+    tls internal
+
+    reverse_proxy homarr:7575
+}

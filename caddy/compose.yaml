@@ -11,7 +11,7 @@ services:
       - ./config:/config
     networks:
       - proxy-network
-
+    restart: unless-stopped
 networks:
   proxy-network:
     external: true

@@ -31,3 +31,9 @@ home.homelab {
 
     reverse_proxy homarr:7575
 }
+
+cloud.homelab {
+    tls internal
+   
+    reverse_proxy nextcloud:80
+}

@@ -1,0 +1,49 @@
+services:
+  nextcloud:
+    image: nextcloud:apache
+    container_name: nextcloud
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    environment:
+      MYSQL_HOST: ${MYSQL_HOST}
+      MYSQL_DATABASE: ${MARIADB_DATABASE}
+      MYSQL_USER: ${MARIADB_USER}
+      MYSQL_PASSWORD: ${MARIADB_PASSWORD}
+      REDIS_HOST: ${REDIS_HOST}
+    volumes:
+      - ./appdata:/var/wwW/html
+      - /mnt/cloud-data/nextcloud:/var/www/html/data
+    depends_on:
+      - db
+      - redis
+    networks:
+      - nextcloud-network
+      - proxy-network
+
+  db:
+    image: mariadb:11
+    container_name: nextcloud-db
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: ${MARIADB_DATABASE}
+      MARIADB_USER: ${MARIADB_USER}
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
+    volumes:
+      - /mnt/cloud-data/mariadb:/var/lib/mysql
+    networks:
+      - nextcloud-network
+
+  redis:
+    image: redis:alpine
+    container_name: nextcloud-redis
+    restart: unless-stopped
+    networks:
+      - nextcloud-network
+
+networks:
+  nextcloud-network:
+  proxy-network:
+    external: true
+

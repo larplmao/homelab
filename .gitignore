@@ -34,3 +34,7 @@ caddy/config/*
 # Homarr
 homarr/appdata/*
 !homarr/appdata/.gitkeep
+
+# Nextcloud
+nextcloud/appdata/*
+!nextcloud/appdata/.gitkeep

@@ -37,3 +37,8 @@ cloud.homelab {
    
     reverse_proxy nextcloud:80
 }
+
+grafana.homelab {
+    tls internal
+    reverse_proxy grafana:3000
+}

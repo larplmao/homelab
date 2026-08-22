@@ -38,3 +38,9 @@ homarr/appdata/*
 # Nextcloud
 nextcloud/appdata/*
 !nextcloud/appdata/.gitkeep
+
+# Monitoring
+monitoring/grafana/*
+monitoring/prometheus/data/*
+!monitoring/grafana/.gitkeep
+!monitoring/prometheus/data/.gitkeep

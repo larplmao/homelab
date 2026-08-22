@@ -36,6 +36,8 @@ Ich nutze es, um Linux, Docker, Netzwerke etc.. kennenzulernen und um mir zuhaus
 - Dynu Updater
 - Caddy
 - Homarr
+- Nextcloud
+- Monitoring (Grafana + Prometheus)
 
 ---
 
@@ -47,6 +49,10 @@ homelab/
 |-- docs/
 |-- dynu/
 |-- homarr/
+|-- nextcloud/
+|-- monitoring/
+|   |-- grafana/
+|   |-- prometheus/
 |-- portainer/
 |-- uptime-kuma/
 |-- pi-hole/

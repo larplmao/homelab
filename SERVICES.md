@@ -9,3 +9,6 @@
 | Dynu Updater | // | Installiert| 
 | Caddy | 80, 443 | Installiert |
 | Homarr| 7575 | Installiert |
+| Nextcloud | 80 | Installiert |
+| Grafana | 3000 | Installiert |
+| Prometheus | // | Installiert |

@@ -12,3 +12,4 @@
 | Nextcloud | 80 | Installiert |
 | Grafana | 3000 | Installiert |
 | Prometheus | // | Installiert |
+| Actual Budget | 5006 | Vorbereitet |

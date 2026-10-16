@@ -44,3 +44,7 @@ monitoring/grafana/*
 monitoring/prometheus/data/*
 !monitoring/grafana/.gitkeep
 !monitoring/prometheus/data/.gitkeep
+
+# Actual Budget
+actual-budget/data/*
+!actual-budget/data/.gitkeep

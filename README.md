@@ -38,6 +38,7 @@ Ich nutze es, um Linux, Docker, Netzwerke etc.. kennenzulernen und um mir zuhaus
 - Homarr
 - Nextcloud
 - Monitoring (Grafana + Prometheus)
+- Actual Budget
 
 ---
 
@@ -45,6 +46,7 @@ Ich nutze es, um Linux, Docker, Netzwerke etc.. kennenzulernen und um mir zuhaus
 
 ```
 homelab/
+|-- actual-budget/
 |-- caddy/
 |-- docs/
 |-- dynu/

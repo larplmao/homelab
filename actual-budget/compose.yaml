@@ -1,0 +1,13 @@
+services:
+  actual-budget:
+    image: actualbudget/actual-server:latest
+    container_name: actual-budget
+    restart: unless-stopped
+    volumes:
+      - ./data:/data
+    networks:
+      - proxy-network
+
+networks:
+  proxy-network:
+    external: true

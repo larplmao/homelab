@@ -42,3 +42,8 @@ grafana.homelab {
     tls internal
     reverse_proxy grafana:3000
 }
+
+budget.homelab {
+    tls internal
+    reverse_proxy actual-budget:5006
+}
